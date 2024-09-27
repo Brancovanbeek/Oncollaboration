@@ -1,0 +1,279 @@
+.varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+}
+
+/*standaard*/
+img{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+/*standaard*/
+button{
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*standaard*/
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: red solid;
+}
+
+/*responsive*/
+@media (min-width:475px){
+    .container{
+        max-width:475px;
+    }
+}
+@media (min-width:640px){
+    .container{
+        max-width:640px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:768px;
+    }
+}
+@media (min-width:1024px){
+    .container{
+        max-width:1024px;
+    }
+}
+@media (min-width:1280px){
+    .container{
+        max-width:1280px;
+    }
+}
+@media (min-width:1536px){
+    .container{
+        max-width:1536px;
+    }
+}
+
+footer{
+    position: sticky;
+    margin-bottom: 0;
+    margin-top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-menu{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 2em;
+    list-style: none;
+    font-style: none;
+}
+
+
+
+/*
+<header>
+  <nav class="navbar">
+    <section class="navsection">
+      <section class="logo">
+        <img src="IMG/Scherm­afbeelding 2024-09-26 om 10.06.41.png" height="100em">
+      </section>
+      <ul id="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Webinars</a></li>
+        <li><a href="#">Contourings</a></li>
+        <li><a href="#">Profile</a></li>
+        <button><a href="#">Start Searching</a></button>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+<main>
+  <section class="search-container">
+    <h2 class="visually-hidden">Zoeken</h2>
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for a Webinar" />
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2 id="featured-h2">FEATURED</h2>  
+    <br><br>
+    <img id="featured-img"   src="IMG/featured.png" alt="featuredimg" height="200">
+    <h3 id="featured-h3">Lorem ipsum, dolor sit</h3>
+    <p id="featured-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta odio iste cum quia minus excepturi distinctio dolorum dignissimos, nesciunt rerum ad dolore consectetur sed corrupti illum. Optio, facere laudantium!</p>
+    <button id="featured-button" href="#">WATCH NOW</button>
+  </section>
+
+
+
+/*
+header{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #6A0025;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.navsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 50px; /* moet omlaag als het scherm kleiner wordt*/
+
+/*
+li a:hover{
+    color:#D2B2BD;
+}
+
+button a{
+    color: #6A0025;
+    font-weight: bold;
+}
+
+button{
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: #D2B2BD;
+
+}
+
+body{
+    background-color: #F0E5E9;
+}
+
+main{
+    margin: 0 3em;
+    padding: 3em;
+}
+
+.search-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    margin-top: 50px;
+}
+  
+.search-box i{
+    position: absolute;
+   margin-left: 15px;
+    font-size: 20px;
+    color: #6A0025; 
+}
+  
+.search-box input{
+    height: 60px;
+    width: 100%;
+    padding-left: 50px; 
+    border: 1px solid #e6e1e7;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7eff4;
+    outline: none;
+    font-weight: bold;
+}
+  
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#featured-h2{
+    color: #6A0025;
+    margin-top: 4em;
+    font-size: 30px;
+}
+
+#featured-img{
+    float: right;
+    margin-left: 20px;
+    max-width: 500px;
+    height: auto;
+}
+
+#featured-h3{
+    font-size: 30px;
+}
+
+#featured-p{
+    font-size: 18px;
+}
+
+#featured-button{
+    border-radius: 10px;
+    color: white;
+    background-color:  #4A0019;
+    font-size: smaller;
+    font-weight: bold;
+    margin-left: 0;
+    width: 260px;
+    height: 60px;
+    float: left;
+    margin-top: 5em;
+}
+
+#featured-button:hover{
+    background-color:#6A0025;
+}
+
+.featured{
+    overflow: auto;
+    
+}
+
+
+footer{
+    margin: 0;
+}/*
