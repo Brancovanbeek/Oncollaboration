@@ -1,3 +1,5 @@
+
+
 .varela-round-regular {
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
@@ -10,21 +12,22 @@
     font-family: "Varela Round", sans-serif;
 }
 
-/*standaard*/
+
+/* standaard
 img{
     display: block;
     max-width: 100%;
     user-select: none;
 }
 
-/*standaard*/
+
 button{
     display: inline-block;
     padding: 0;
     cursor: pointer;
 }
 
-/*standaard*/
+
 .container{
     width: 100%;
     margin-left: auto;
@@ -34,7 +37,7 @@ button{
     border: red solid;
 }
 
-/*responsive*/
+
 @media (min-width:475px){
     .container{
         max-width:475px;
@@ -85,48 +88,8 @@ footer{
     list-style: none;
     font-style: none;
 }
+/* /* */
 
-
-
-/*
-<header>
-  <nav class="navbar">
-    <section class="navsection">
-      <section class="logo">
-        <img src="IMG/Scherm­afbeelding 2024-09-26 om 10.06.41.png" height="100em">
-      </section>
-      <ul id="navlist">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Webinars</a></li>
-        <li><a href="#">Contourings</a></li>
-        <li><a href="#">Profile</a></li>
-        <button><a href="#">Start Searching</a></button>
-      </ul>
-    </section>
-  </nav>
-</header>
-
-<main>
-  <section class="search-container">
-    <h2 class="visually-hidden">Zoeken</h2>
-    <div class="search-box">
-      <i class="fas fa-search"></i>
-      <input type="text" placeholder="Search for a Webinar" />
-    </div>
-  </section>
-
-  <section class="featured">
-    <h2 id="featured-h2">FEATURED</h2>  
-    <br><br>
-    <img id="featured-img"   src="IMG/featured.png" alt="featuredimg" height="200">
-    <h3 id="featured-h3">Lorem ipsum, dolor sit</h3>
-    <p id="featured-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta odio iste cum quia minus excepturi distinctio dolorum dignissimos, nesciunt rerum ad dolore consectetur sed corrupti illum. Optio, facere laudantium!</p>
-    <button id="featured-button" href="#">WATCH NOW</button>
-  </section>
-
-
-
-/*
 header{
     border-radius: 0px 0px 10px 10px;
     background-color: #6A0025;
@@ -157,8 +120,9 @@ li a{
     font-size: larger;
     font-weight: bold;
     padding: 50px; /* moet omlaag als het scherm kleiner wordt*/
+}
 
-/*
+
 li a:hover{
     color:#D2B2BD;
 }
@@ -276,4 +240,4 @@ main{
 
 footer{
     margin: 0;
-}/*
+}
