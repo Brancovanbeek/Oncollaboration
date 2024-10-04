@@ -6,78 +6,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   </head> 
   <body>
-    
-    
-    
-
-
-
-  </main>
     <header>
       <nav class="navbar">
-        <section class="navsection">
-          <section class="logo">
-            <img src="IMG/Scherm­afbeelding 2024-09-26 om 10.06.41.png" height="100em">
-          </section>
-          <ul id="navlist">
+            <img class="logo" src="IMG/logo.png" alt="logo" height="100em">
+          <ul class="navlist">
             <li><a href="#">Home</a></li>
             <li><a href="#">Webinars</a></li>
             <li><a href="#">Contourings</a></li>
             <li><a href="#">Profile</a></li>
-            <button><a href="#">Start Searching</a></button>
           </ul>
-        </section>
+            <button class="navbutton" href="#">Start Searching</button>
       </nav>
     </header>
     
-    
-      <section class="search-container">
-        <h2 class="visually-hidden">Zoeken</h2>
-        <div class="search-box">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search for a Webinar" />
-        </div>
-      </section>
-    
-      <section class="featured">
-        <h2 id="featured-h2">FEATURED</h2>  
-        <br><br>
-        <img id="featured-img"   src="IMG/featured.png" alt="featuredimg" height="200">
-        <h3 id="featured-h3">Lorem ipsum, dolor sit</h3>
-        <p id="featured-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta odio iste cum quia minus excepturi distinctio dolorum dignissimos, nesciunt rerum ad dolore consectetur sed corrupti illum. Optio, facere laudantium!</p>
-        <button id="featured-button" href="#">WATCH NOW</button>
-      </section>
-    
+    <main class="main-mobile">
+      
+      <h1 class="h1mobile">OVERVIEW</h1>
 
-    
-  </main>
+      <div class="search">
+        <form action="#">
+          <input class="searchbar" type="text" placeholder="Search...">
+        </form>
+      </div>
 
-    <!-- footer voor mobiel -->
-    <!-- <footer class="footer container">
-      <nav>
-          <ul class="footer-menu">
-              <li>
-                  <a class="footer-link" href="#home">Home</a>
-              </li>
-              <li>
-                  <a class="footer-link" href="#webinars">Webinars</a>
-              </li>
-              <li>
-                  <a class="footer-link" href="#contouring">Contouring</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#profile">Profile</a>
-            </li>
-          </ul>
-      </nav>
-    </footer> -->
-   </body>
-  </html>
+      <h2 class="featured">FEATURED</h2>
+
+      <section>
+        
+
+
+
+
+      </section>
+    </main>
+
+      
+
+
+
+
+    <footer class="desktop-footer">
+      <p class="copyright">©2024 - Antoni van Leeuwenhoek</p>
+      <ul class="info-list">
+        <li>Disclaimer</li>
+        <li>Privacystatement</li>
+        <li>Cookieverklaring</li>
+      </ul>
+      <img class="logo" src="IMG/logo.png" alt="logo" height="100em">
+    </footer>
+
+
+    <footer class="mobile-footer">
+      <section class="sticky-footer">
+        <nav class="footer-menu">
+          <div class="nav-item home">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+          </div>
+          <div class="nav-item webinars">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Webinars</span>
+          </div>
+          <div class="nav-item contouring">
+            <i class="fa-solid fa-stethoscope"></i>
+            <span>Contouring</span>
+          </div>
+          <div class="nav-item profile">
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+          </div>
+        </nav>
+      </section>
+    </footer>
+
+  </body>
+</html>
 
 
 

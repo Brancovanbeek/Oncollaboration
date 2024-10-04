@@ -1,75 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-.varela-round-regular {
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
-  
+
+
+
+
+
 *{
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Varela Round", sans-serif;
-}
-
-
-/* standaard
-img{
-    display: block;
-    max-width: 100%;
-    user-select: none;
-}
-
-
-button{
-    display: inline-block;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F0E5E9;
+}
+
+main{
+    height: 100vh;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+
+
+
+
+
+header{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #6A0025;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+   
+}
+    
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-grow: 1;
+}
+
+.navbutton{
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: #F0E5E9;
+    color: #6A0025;
+    border-radius: 10px;
+    border: none;
+    min-height: 43px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+li{
+    list-style: none;
+    
+}
+
+li a{
+    color:#F0E5E9;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    
+    /* moet omlaag als het scherm kleiner wordt*/
+}
+
+.nav-toggle {
+    display: none; /* Verborgen op grotere schermen */
+    flex-direction: column;
     cursor: pointer;
 }
 
-
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: red solid;
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
 }
 
 
-@media (min-width:475px){
-    .container{
-        max-width:475px;
-    }
-}
-@media (min-width:640px){
-    .container{
-        max-width:640px;
-    }
-}
-@media (min-width:768px){
-    .container{
-        max-width:768px;
-    }
-}
-@media (min-width:1024px){
-    .container{
-        max-width:1024px;
-    }
-}
-@media (min-width:1280px){
-    .container{
-        max-width:1280px;
-    }
-}
-@media (min-width:1536px){
-    .container{
-        max-width:1536px;
-    }
+
+/* searchbar */
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 0 20px;
 }
 
-footer{
+.searchbar{
+    padding: 10px;
+    font-size: 16px;
+    width: 87.5vw;
+    max-width: 1200px;
+}
+
+
+
+
+/* footer */
+.desktop-footer{
+    background-color: #6A0025;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.info-list{
+    display: flex;
+    justify-content:center;
+    gap: 1em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    margin-right: 1em;
+
+}
+
+.info-list li:first-of-type::after{
+    content: "●";
+    margin-left: 1em;
+}
+
+.info-list li:nth-of-type(2)::after{
+    content: "●";
+    margin-left: 1em;
+}
+
+.copyright{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    margin-left: 2.5em;
+}
+
+
+/* footer */
+.mobile-footer{
     position: sticky;
     margin-bottom: 0;
     margin-top: 100%;
@@ -88,156 +174,159 @@ footer{
     list-style: none;
     font-style: none;
 }
-/* /* */
 
-header{
-    border-radius: 0px 0px 10px 10px;
-    background-color: #6A0025;
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    margin: 0;
-}
-
-.navbar{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.navsection{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-li{
-    list-style: none;
-    display: inline-block;
-}
-
-li a{
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-    padding: 50px; /* moet omlaag als het scherm kleiner wordt*/
-}
-
-
-li a:hover{
-    color:#D2B2BD;
-}
-
-button a{
-    color: #6A0025;
-    font-weight: bold;
-}
-
-button{
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 200px;
-    height: 40px;
     background-color: white;
-    border: none;
-    font-size: larger;
-}
-
-button:hover{
-    background-color: #D2B2BD;
-
-}
-
-body{
-    background-color: #F0E5E9;
-}
-
-main{
-    margin: 0 3em;
-    padding: 3em;
-}
-
-.search-box{
-    position: relative;
     display: flex;
-    align-items: center;
-    min-width: 100%;
-    margin-top: 50px;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
 }
   
-.search-box i{
-    position: absolute;
-   margin-left: 15px;
-    font-size: 20px;
-    color: #6A0025; 
+.sticky-footer .nav-item {
+    text-align: center;
+    color: #6a6a6a
 }
   
-.search-box input{
-    height: 60px;
-    width: 100%;
-    padding-left: 50px; 
-    border: 1px solid #e6e1e7;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #f7eff4;
-    outline: none;
-    font-weight: bold;
+.sticky-footer .nav-item img {
+    width: 24px; 
+    height: 24px;
 }
   
-.visually-hidden{
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+.sticky-footer .nav-item span {
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
 }
 
-#featured-h2{
-    color: #6A0025;
-    margin-top: 4em;
-    font-size: 30px;
-}
-
-#featured-img{
-    float: right;
-    margin-left: 20px;
-    max-width: 500px;
-    height: auto;
-}
-
-#featured-h3{
-    font-size: 30px;
-}
-
-#featured-p{
-    font-size: 18px;
-}
-
-#featured-button{
-    border-radius: 10px;
-    color: white;
-    background-color:  #4A0019;
-    font-size: smaller;
-    font-weight: bold;
-    margin-left: 0;
-    width: 260px;
-    height: 60px;
-    float: left;
-    margin-top: 5em;
-}
-
-#featured-button:hover{
-    background-color:#6A0025;
-}
-
-.featured{
-    overflow: auto;
+.desktop-footer{
+    margin-top: 100%;
     
 }
 
 
-footer{
-    margin: 0;
+
+/* Basis container instellingen */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box; /* Zorg dat padding meegerekend wordt in breedte */
 }
+
+
+/* Verberg de header bij schermbreedtes kleiner dan 475px */
+@media (max-width: 515px) {
+    /* .container {
+        max-width: 100%;
+    } */
+    header {
+        display: none; /* Verberg de header */
+    }
+}
+
+/* Layout bij schermbreedtes kleiner dan 768px */
+@media (max-width: 845px) {
+    .navlist {
+        /* flex-direction: column; Stapel links bij kleinere schermen */
+        /* align-items: flex-start; Links links uitlijnen */
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1em;
+        gap: 0.5em;
+    }
+
+    .navbutton{
+        padding: 0;
+    }
+    
+    li a {
+        font-size: 1.2em; /* Maak tekst kleiner op kleinere schermen */
+    }
+
+    .navbutton {
+        margin-top: 10px; /* Ruimte boven de button */
+    }
+    
+    header {
+        flex-direction: column; /* Stapel de header-elementen */
+        align-items: flex-start; /* Begin met links uitlijnen */
+    }
+
+    .searchbar{
+        width: 95vw;
+    }
+
+    .featured{
+        display: none;
+    }
+
+    main{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
+
+@media (max-width: 515px){
+    /* .container {
+        max-width: 640px; 
+    } */
+    .desktop-footer {
+        display: none !important; /* Verberg footer vanaf deze breedte */
+    }
+} 
+
+/* Layout bij schermbreedtes groter dan 640px */
+@media (min-width: 515px) {
+    /* .container {
+        max-width: 640px; 
+    } */
+    .mobile-footer {
+        display: none; /* Verberg footer vanaf deze breedte */
+    }
+    h1{
+        display: none;
+    }
+}
+
+/* Layout bij schermbreedtes kleiner dan 768px */
+@media (max-width: 768px) {
+    /* .container {
+        max-width: 768px;
+    } */
+
+    .desktop-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Layout bij schermbreedtes groter dan 1024px */
+@media (min-width: 1024px) {
+    /* .container {
+        max-width: 1024px;
+    } */
+}
+
+/* Layout bij schermbreedtes groter dan 1280px */
+@media (min-width: 1280px) {
+    /* .container {
+        max-width: 1280px; 
+} */
+}
+
+/* Layout bij schermbreedtes groter dan 1536px */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+}
+}
+
