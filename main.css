@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-body {
-    font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: "VAG Rundschrift D";
+    src: url(Fonts/VAGRundschriftD.ttf);
 }
-
-
-
-
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "VAG Rundschrift D";
 }
 
 body{
@@ -24,11 +20,6 @@ main{
     margin-left: 5em;
     margin-right: 5em;
 }
-
-
-
-
-
 
 header{
     border-radius: 0px 0px 10px 10px;
@@ -45,8 +36,6 @@ header{
     align-items: center;
     width: 100%;
     justify-content: space-between;
-
-   
 }
     
 .navlist{
@@ -67,6 +56,7 @@ header{
     min-height: 43px;
     font-size: 18px;
     font-weight: 700;
+    font-family: "Open Sans", sans-serif;
 }
 
 li{
@@ -97,6 +87,37 @@ li a{
 }
 
 
+h1{
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.webinar{
+    border-radius: 10px;
+}
+
+.overview-text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #1F000B;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.overview-name{
+    font-family: "Open Sans", sans-serif;
+    color: #6A0025;
+    font-weight: 400;
+    font-size: 16px;
+}
 
 /* searchbar */
 
@@ -104,16 +125,123 @@ li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em;
-    padding: 0 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   
+   
 }
 
 .searchbar{
     padding: 10px;
     font-size: 16px;
-    width: 87.5vw;
-    max-width: 1200px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
 }
+
+.webinar{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 1em;
+    margin-top: 1em;
+    
+}
+
+/* homepage mobile */
+
+.webinar-img{
+    border-radius: 10px;
+}
+
+.webinars-btn{
+    color: #F0E5E9;
+    background-color: #6A0025;
+    border-radius: 5px;
+    padding:5px 43px 5px 43px;
+    float: right;
+    margin-top: 1em;
+    border: none;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.overview-text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #1F000B;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.overview-name{
+    font-family: "Open Sans", sans-serif;
+    color: #6A0025;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contourings-section{
+    margin-top: 4em;
+}
+.contourings{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.contourings-img{
+    border-radius: 10px;
+}
+
+.webinars-btn{
+    color: #F0E5E9;
+    background-color: #6A0025;
+    border-radius: 5px;
+    padding:5px 43px 5px 43px;
+    float: right;
+    margin-top: 1em;
+    border: none;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif; 
+}
+
+
+
+
+/* desktophomepage */
+.featured-text{
+    margin-top: 2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1F000B;
+}
+
+.featured-name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2A000E;
+}
+
+.featured-h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #6A0025; 
+    margin-top: 3em;
+}
+
+.gynaecology-img{
+    float: right;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
 
 
 
@@ -164,6 +292,11 @@ li a{
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.active{
+    color: #6A0025; 
+    /* moet ook nog bij ander pagina's */
 }
 
 .footer-menu{
@@ -259,14 +392,6 @@ li a{
         align-items: flex-start; /* Begin met links uitlijnen */
     }
 
-    .searchbar{
-        width: 95vw;
-    }
-
-    .featured{
-        display: none;
-    }
-
     main{
         margin-left: 1em;
         margin-right: 1em;
@@ -281,9 +406,13 @@ li a{
     .desktop-footer {
         display: none !important; /* Verberg footer vanaf deze breedte */
     }
+
+    .featured{
+        display: none;
+    }
 } 
 
-/* Layout bij schermbreedtes groter dan 640px */
+/* Layout bij schermbreedtes groter dan 515px */
 @media (min-width: 515px) {
     /* .container {
         max-width: 640px; 
@@ -291,9 +420,15 @@ li a{
     .mobile-footer {
         display: none; /* Verberg footer vanaf deze breedte */
     }
+
     h1{
         display: none;
     }
+
+    .webinars-section, .contourings-section, .webinars-btn{
+        display: none;
+    }
+
 }
 
 /* Layout bij schermbreedtes kleiner dan 768px */

@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head> 
+
   <body>
     <header>
       <nav class="navbar">
@@ -23,29 +25,94 @@
     
     <main class="main-mobile">
       
-      <h1 class="h1mobile">OVERVIEW</h1>
+      <h1 class="h1-mobile">OVERVIEW</h1>
 
-      <div class="search">
-        <form action="#">
-          <input class="searchbar" type="text" placeholder="Search...">
-        </form>
-      </div>
+      <form class="search" action="#">
+        <input class="searchbar" type="text" placeholder="Search...">
+      </form>
+      
+      <!-- homepage mobile -->
+      <section class="webinars-section">
+        <h2>Webinars</h2>
+        <div class="webinar">
+          <div>
+            <img class="webinar-img" src="IMG/webinargreen.png" alt="Webinar" height="155" width="270">
+            <p class="overview-text">
+              26th FARO Webinar: Updated management in glioma WHO grade 2-3 <br>
+            </p>
+            <p class="overview-name">
+              William Breen, MD
+            </p>
+          </div>
+          <div>
+            <img class="webinar-img" src="IMG/webinarblue.png" alt="webinar" height="155" width="270">
+            <p class="overview-text">
+              TPL Group Updates & Exchange Forum: "Radiotherapy for Pediatric CNS - Germ Cell Tumors" <br>
+            </p>
+            <p class="overview-name"> 
+              Dr. John Lucas
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <h2 class="featured">FEATURED</h2>
+      <button class="webinars-btn">SEE MORE</button>
 
-      <section>
+      <section class="contourings-section">
+      <h2>Contourings</h2>
+        <div class="contourings">
+          <div>
+            <img class="contourings-img"  src="IMG/contouring1.jpeg" alt="contourings" height="155">
+            <p class="overview-text">
+              IMA 4-32<br>
+            </p>
+            <p class="overview-name">
+              Prof. R.P. (Rob) Coppes, PhD
+            </p>
+          </div>
+          <div>
+            <img class="contourings-img" src="IMG/contouring2.jpeg" alt="contourings" height="155">
+            <p class="overview-text">
+              IMA 4-33<br>
+            </p>
+            <p class="overview-name"> 
+              Prof. R.P. (Rob) Coppes, PhD
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <button class="webinars-btn">SEE MORE</button>
+      <!-- einde homepage mobile -->
+
+      <!-- homepage desktop -->
+      <section class="featured">
+        <h2 class="featured-h2">FEATURED</h2>
+        
+        <p class="featured-text">
+          IROS CME Webinar: Abdomino-Pelvic (AP) Series: Re-irradiation in cervical cancer
+        </p>
+        <p class="featured-name">
+          IROS CME Webinar<br>
+          Abdomino-Pelvic (AP) Series<br>
+          <br>
+        </p>
+
+        
+        
+        <img class="gynaecology-img" src="IMG/gynaecology.png" alt="gynaecology" height="400vh">
+        
+        
         
 
 
 
 
       </section>
-    </main>
+
 
       
-
-
-
+    </main>
 
     <footer class="desktop-footer">
       <p class="copyright">©2024 - Antoni van Leeuwenhoek</p>
@@ -57,29 +124,28 @@
       <img class="logo" src="IMG/logo.png" alt="logo" height="100em">
     </footer>
 
-
     <footer class="mobile-footer">
-      <section class="sticky-footer">
-        <nav class="footer-menu">
-          <div class="nav-item home">
-            <i class="fa fa-home"></i>
-            <span>Home</span>
-          </div>
-          <div class="nav-item webinars">
-            <i class="fa-solid fa-chalkboard-user"></i>
-            <span>Webinars</span>
-          </div>
-          <div class="nav-item contouring">
-            <i class="fa-solid fa-stethoscope"></i>
-            <span>Contouring</span>
-          </div>
-          <div class="nav-item profile">
-            <i class="fa-solid fa-user"></i>
-            <span>Profile</span>
-          </div>
-        </nav>
-      </section>
-    </footer>
+        <section class="sticky-footer">
+          <nav class="footer-menu">
+            <div class="nav-item home">
+              <i class="fa fa-home active"></i>
+              <span>Home</span>
+            </div>
+            <div class="nav-item webinars">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span>Webinars</span>
+            </div>
+            <div class="nav-item contouring">
+              <i class="fa-solid fa-stethoscope"></i>
+              <span>Contouring</span>
+            </div>
+            <div class="nav-item profile">
+              <i class="fa-solid fa-user"></i>
+              <span>Profile</span>
+            </div>
+          </nav>
+        </section>
+      </footer>
 
   </body>
 </html>
