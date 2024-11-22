@@ -1,14 +1,9 @@
-@font-face {
-    font-family: "VAG Rundschrift D";
-    src: url(Fonts/VAGRundschriftD.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "VAG Rundschrift D";
+    font-family:  var(--vag-rund);
 }
 
 html{
@@ -16,11 +11,7 @@ html{
 }
 
 body{
-    /* background-image: url("IMG/37a6c79715abad0401fef49b224e754c.png"); */
-    background-color: #F0E5E9; /* Kleur met transparantie */
-    background-blend-mode: multiply; /* Meng de kleur met het patroon */
-    background-repeat: repeat;
-    height: -webkit-fill-available;
+    background-color: var(--lightred);
 }
 
 main{
@@ -31,7 +22,7 @@ main{
 
 header{
     border-radius: 0px 0px 10px 10px;
-    background-color: #6A0025;
+    background-color: var(--darkred);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -40,7 +31,7 @@ header{
 }
 
 header > nav > ul > li >a:hover{
-    color: #D2B2BD;
+    color: var(--accentred);
 }
 
 .navbar{
@@ -61,26 +52,25 @@ header > nav > ul > li >a:hover{
 .navbutton{
     margin-left: auto;
     padding: 10px 15px;
-    background-color: #F0E5E9;
-    color: #6A0025;
+    background-color: var(--lightred);
+    color: var(--darkred);
     border-radius: 10px;
     border: none;
     min-height: 43px;
     font-size: 18px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
 }
 
 li{
     list-style: none;
-    
 }
 
 li a{
-    color:#F0E5E9;
+    color:var(--accentred);
     font-size: 18px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
     
     /* moet omlaag als het scherm kleiner wordt*/
 }
@@ -94,20 +84,19 @@ li a{
 .bar {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: var(--white);
     margin: 3px 0;
 }
 
-
 h1{
     margin-top: 0.5em;
-    font-weight: 400;
+    font-weight: var(--light);
     font-size: 30px;
 }
 
 h2{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: var(--light);
 }
 
 .webinar{
@@ -115,32 +104,29 @@ h2{
 }
 
 .overview-text{
-    font-weight: 700;
+    font-weight: var(--bold);
     font-size: 18px;
     line-height: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: #1F000B;
+    font-family: var(--open-sans);
+    color: var(--black);
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
 .overview-name{
-    font-family: "Open Sans", sans-serif;
-    color: #6A0025;
-    font-weight: 400;
+    font-family: var(--open-sans);
+    color: var(--darkred);
+    font-weight: var(--light);
     font-size: 16px;
 }
 
 /* searchbar */
-
 .search{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
     margin-bottom: 1em;
-   
-   
 }
 
 .searchbar{
@@ -160,37 +146,36 @@ h2{
 }
 
 /* homepage mobile */
-
 .webinar-img{
     border-radius: 10px;
 }
 
 .webinars-btn{
-    color: #F0E5E9;
-    background-color: #6A0025;
+    color: var(--white);
+    background-color: var(--darkred);
     border-radius: 5px;
     padding:5px 43px 5px 43px;
     float: right;
     margin-top: 1em;
     border: none;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
 }
 
 .overview-text{
-    font-weight: 700;
+    font-weight: var(--bold);
     font-size: 18px;
     line-height: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: #1F000B;
+    font-family: var(--open-sans);
+    color: var(--black);
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
 .overview-name{
-    font-family: "Open Sans", sans-serif;
-    color: #6A0025;
-    font-weight: 400;
+    font-family: var(--open-sans);
+    color: var(--darkred);
+    font-weight: var(--light);
     font-size: 16px;
 }
 
@@ -209,15 +194,15 @@ h2{
 }
 
 .webinars-btn{
-    color: #F0E5E9;
-    background-color: #6A0025;
+    color: var(--white);
+    background-color: var(--darkred);
     border-radius: 5px;
     padding:5px 43px 5px 43px;
     float: right;
     margin-top: 1em;
     border: none;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif; 
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
 }
 
 /* desktophomepage */
@@ -226,13 +211,13 @@ h2{
     margin-top: 1em;
     margin-bottom: 2em;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     gap: 1em;
 }
 
 .oncollaboration-text{
-    font-family:  "Open Sans", sans-serif;
+    font-family:  var(--open-sans);
 }
 
 .antonivanleeuwenhoek{
@@ -313,24 +298,24 @@ h2{
 
 .featured-h2{
     font-size: 30px;
-    font-weight: 400;
-    color: #6A0025; 
+    font-weight: var(--light);
+    color: var(--darkred);
 }
 
 .featured-text{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-family: var(--open-sans);
+    font-weight: var(--bold);
     font-size: 30px;
-    color: #1F000B;
+    color: var(--black);
     margin-top: 1em;
     max-width: 650px;
 }
 
 .featured-name{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-family: var(--open-sans);
+    font-weight: var(--light);
     font-size: 18px;
-    color: #2A000E;
+    color: var(--black);
 }
 
 .gynaecology-img{
@@ -343,23 +328,22 @@ h2{
 .featured-btn{
     width: 150px;
     height: 40px;
-    background-color: #1F000B;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 10px;
     border: none;
     font-size: 16px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
 }
 
 .featured-btn2{
-    color: #F0E5E9;
-    background-color: #6A0025;
+    color: var(--accentred);
+    background-color: var(--darkred);
     border-radius: 10px;
-    /* padding:16px 30px 16px 30px; */
     border: none;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif; 
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
     width: 150px;
     height: 60px;
     font-size: 18px;
@@ -367,13 +351,13 @@ h2{
 }
 
 .category-container > a{
-    color: #1F000B;
-    background-color: #D2B2BD;
+    color: var(--black);
+    background-color: var(--accentred);
     border-radius: 10px;
     padding:16px 30px 16px 30px;
     border: none;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif; 
+    font-weight: var(--bold);
+    font-family: var(--open-sans);
     min-width: 110px;
     height: 60px;
     font-size: 18px;
@@ -389,17 +373,17 @@ h2{
 }
 
 .category-container > a:hover{
-    background-color: #6A0025;
-    color: #F0E5E9;
+    background-color: var(--darkred);
+    color: var(--accentred);
 }
 
 
 /* footer */
 .desktop-footer{
-    background-color: #6A0025;
+    background-color: var(--darkred);
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--white);
     flex-wrap: wrap;
 }
 
@@ -441,7 +425,7 @@ h2{
 }
 
 .active{
-    color: #6A0025; 
+    color: var(--darkred);
     /* moet ook nog bij ander pagina's */
 }
 
@@ -458,7 +442,7 @@ h2{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
@@ -534,4 +518,27 @@ h2{
         display: none;
     }
 
+}
+
+
+/* webinar */
+.webinar-all{
+    border: solid black;
+    margin-top: 2em;
+}
+
+.webinar-vid-container{
+    margin-top: 5em;
+    border: rgb(209, 21, 21) solid;
+    max-width: 65%;
+}
+
+.webinar-vid-container img{
+    max-width: 100%;
+    border: black solid;
+}
+
+.webinar-vid-container p{
+    border: solid black;
+    max-width: 100%;
 }
