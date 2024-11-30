@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar">
-              <img class="logo" src="IMG/logo.png" alt="logo" height="100em">
+              <img class="logo" src="IMG/logo.png" alt="logo">
             <ul class="navlist">
               <li><a href="index.html">Home</a></li>
               <li><a href="webinars.html">Webinars</a></li>
@@ -27,7 +27,7 @@
         <h1 class="h1-mobile">WEBINAR</h1>
         <section class="webinar-detail">
             <div class="webinar-vid-container">
-                <img class="webinar-vid"  src="IMG/WEBINARVID.png" alt="webinar video">
+                <img class="webinar-vid" src="IMG/WEBINARVID.png" alt="webinar video">
                 <p>IROS CME Webinar: Fractionation in Head & Neck and CNS malignancies; Radiobiology Perspective</p>
             </div>
             
@@ -35,26 +35,34 @@
     </main>
 
     <footer class="mobile-footer">
-        <section class="sticky-footer">
-          <nav class="footer-menu">
-            <div class="nav-item home">
-              <i class="fa fa-home active"></i>
+      <section class="sticky-footer">
+        <nav class="footer-menu">
+          <div class="nav-item home">
+            <a href="index.html">
+              <i class="fa fa-home"></i>
               <span>Home</span>
-            </div>
-            <div class="nav-item webinars">
+            </a>
+          </div>
+          <div class="nav-item webinars">
+            <a href="webinars.html" class="active">
               <i class="fa-solid fa-chalkboard-user"></i>
               <span>Webinars</span>
-            </div>
-            <div class="nav-item contouring">
+            </a>
+          </div>
+          <div class="nav-item contouring">
+            <a href="contouring.html">
               <i class="fa-solid fa-stethoscope"></i>
               <span>Contouring</span>
-            </div>
-            <div class="nav-item profile">
+            </a>
+          </div>
+          <div class="nav-item profile">
+            <a href="profile.html">
               <i class="fa-solid fa-user"></i>
               <span>Profile</span>
-            </div>
-          </nav>
-        </section>
+            </a>
+          </div>
+        </nav>
+      </section>
     </footer>
 
     <footer class="desktop-footer">
@@ -64,7 +72,10 @@
           <li>Privacystatement</li>
           <li>Cookieverklaring</li>
         </ul>
-        <img class="logo" src="IMG/logo.png" alt="logo" height="100em">
+        <img class="logo" src="IMG/logo.png" alt="logo">
     </footer>  
+
+    <script src="script.js"></script>
+
 </body>
 </html>
